@@ -1,0 +1,52 @@
+/* General styles for the nav container */
+.nav {
+ display: flex;
+ justify-content: space-between; /* Space between logo and menu */
+ align-items: center; /* Center items vertically */
+ padding: 1rem 2rem; /* Add padding around the nav */
+ background-color: #fff; /* Set background color */
+ box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+/* Logo styling */
+.nav-logo {
+ font-size: 1.8rem; /* Make the logo text larger */
+ font-weight: bold;
+ color: #000; /* Logo color */
+}
+
+/* Remove default list styles */
+.nav-menu {
+ list-style: none;
+ display: flex; /* Align links horizontally */
+ gap: 2rem; /* Space between menu items */
+ margin: 0; /* Reset margin */
+ padding: 0; /* Reset padding */
+}
+
+/* Link styles */
+.nav-menu li a {
+ text-decoration: none; /* Remove underline */
+ color: #000; /* Set link color */
+ font-size: 1rem; /* Font size for links */
+ font-weight: 500; /* Slightly bold */
+ transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Hover effect for links */
+.nav-menu li a:hover {
+ color: #ff6f61; /* Change color on hover */
+}
+
+/* Responsive design: Stack links vertically on smaller screens */
+@media (max-width: 768px) {
+ .nav {
+   flex-direction: column; /* Stack logo and menu */
+   align-items: flex-start; /* Align items to the left */
+ }
+
+ .nav-menu {
+   flex-direction: column; /* Stack links vertically */
+   gap: 1rem; /* Space between items */
+ }
+}

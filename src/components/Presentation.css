@@ -1,0 +1,44 @@
+.pop {
+ margin-top: 2rem;
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjusts columns dynamically */
+ gap: 1rem; /* Space between grid items */
+ justify-content: center; /* Centers grid items if space allows */
+}
+
+.pop_con {
+ overflow: hidden;
+ border-radius: 1rem;
+ box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+ background-color: #fff;
+ text-align: center;
+ padding: 1rem;
+ display: flex;
+ flex-direction: column;
+ align-items: center; /* Centers content horizontally */
+ justify-content: center; /* Centers content vertically */
+ height: auto; /* Ensures consistency */
+}
+
+.pop_con img {
+ width: 40%; /* Smaller image size */
+ height: auto; /* Maintain aspect ratio */
+ display: block;
+ margin: 0 auto; /* Centers the image horizontally */
+}
+
+.pop_card {
+ margin-top: 1rem; /* Adds space between the image and the card */
+ padding: 1rem; /* Add padding to the card */
+ width: 100%;
+ display: flex;
+ flex-direction: column; /* Stacks elements vertically */
+ align-items: center; /* Centers the content */
+}
+
+.pop_card_header {
+ display: flex;
+ justify-content: center; /* Centers the h4 elements horizontally */
+ gap: 1rem; /* Adds space between the headers */
+ margin-bottom: 1rem; /* Add some spacing below the header */
+}
