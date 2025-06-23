@@ -6,10 +6,13 @@ function Header() {
   <div className='nav'> 
      <div className="nav-logo"> YuM</div>
        <ul className='nav-menu'>
+        <nav style={{ display: 'flex', flexDirection: 'column' }}> {/* stack in mobile */}
+   
          <li><Link to="/">Home</Link></li>
          <li><Link to="/about">About</Link></li>
          <li><Link to="/pro">Products</Link></li>
          <li><Link to="/contact">Contact</Link></li>
+         </nav>
        </ul>
        </div>
  );

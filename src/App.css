@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+/* Default for desktop */
+.jj {
+  padding: 20px;
+}
+
+/* For tablets */
+@media screen and (max-width: 768px) {
+  .jj {
+    padding: 10px;
+  }
+}
+
+/* For phones */
+@media screen and (max-width: 480px) {
+  .jj {
+    padding: 5px;
+    font-size: 14px;
+  }
+}
