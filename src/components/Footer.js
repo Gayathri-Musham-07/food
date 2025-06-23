@@ -15,6 +15,7 @@ function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             className="social-link"
+            aria-label="Instagram"
           >
             <FaInstagram />
           </a>
@@ -23,6 +24,7 @@ function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             className="social-link"
+            aria-label="Facebook"
           >
             <FaFacebookF />
           </a>
@@ -31,6 +33,7 @@ function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             className="social-link"
+            aria-label="Website"
           >
             <FaGlobe />
           </a>

@@ -1,126 +1,107 @@
-/* Global Styles */
 body {
- font-family: "Arial", sans-serif;
- margin: 0;
- padding: 0;
- box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .home-page {
- text-align: center;
+  text-align: center;
 }
 
 /* Hero Section */
 .hero-section {
- position: relative;
- text-align: center;
- color: black;
+  position: relative;
+  text-align: center;
 }
 
 .hero-image {
- width: 100%;
- height: auto;
- opacity: 0.3;
+  width: 100%;
+  height: auto;
+  opacity: 0.3;
 }
 
 .hero-text {
- position: absolute;
- top: 50%;
- left: 50%;
- transform: translate(-50%, -50%);
- color: #fff;
- text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
- font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  font-weight: bold;
   color: black;
   z-index: 1;
+  padding: 0 1rem;
 }
 
 .hero-text h1 {
- font-size: 3rem;
- margin: 0;
+  font-size: 2.5rem;
+  margin: 0;
 }
 
 .hero-text p {
- font-size: 1.2rem;
-}
-
-/* About Section */
-.about-section {
- display: flex;
- align-items: center;
- padding: 40px;
- background-color: #f9f9f9;
-}
-
-.about-content {
- flex: 1;
- padding: 20px;
-}
-
-.about-image {
- flex: 1;
- max-width: 100%;
- border-radius: 10px;
+  font-size: 1.2rem;
 }
 
 /* Offerings Section */
 .offerings-section {
- padding: 40px;
- background-color: #fff;
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.offerings-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
 }
 
 .offerings-grid {
- display: grid;
- grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
- gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
 .offering-card {
- background: #f9f9f9;
- padding: 20px;
- border-radius: 10px;
- box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
- transition: transform 0.3s, box-shadow 0.3s;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .offering-card:hover {
- transform: translateY(-10px);
- box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .offering-card img {
- width: 100%;
- height: 200px;
- object-fit: cover;
- border-radius: 10px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .offering-card h3 {
- margin: 15px 0;
- font-size: 1.5rem;
+  margin: 15px 0 10px;
+  font-size: 1.5rem;
+  color: #333;
 }
 
 .offering-card p {
- color: #555;
+  color: #555;
+  margin: 5px 0;
 }
 
-/* Contact Section */
-.contact-section {
- padding: 40px;
- background-color: #f9f9f9;
-}
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
 
-.contact-button {
- background-color: #ff6f61;
- color: #fff;
- padding: 10px 20px;
- border: none;
- border-radius: 5px;
- font-size: 1rem;
- cursor: pointer;
- transition: background-color 0.3s;
-}
+  .hero-text p {
+    font-size: 1rem;
+  }
 
-.contact-button:hover {
- background-color: #e65a4d;
+  .offering-card img {
+    height: 160px;
+  }
 }

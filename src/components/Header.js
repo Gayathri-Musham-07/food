@@ -1,21 +1,25 @@
-import React from 'react';
-import './Header.css'
+// Header.js
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import './Header.css';
+
 function Header() {
- return (
-  <div className='nav'> 
-     <div className="nav-logo"> YuM</div>
-       <ul className='nav-menu'>
-        <nav style={{ display: 'flex', flexDirection: 'column' }}> {/* stack in mobile */}
-   
-         <li><Link to="/">Home</Link></li>
-         <li><Link to="/about">About</Link></li>
-         <li><Link to="/pro">Products</Link></li>
-         <li><Link to="/contact">Contact</Link></li>
-         </nav>
-       </ul>
-       </div>
- );
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  return (
+    <div className="nav">
+      <div className="nav-logo">YuM</div>
+      <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+        ☰
+      </div>
+      <ul className={`nav-menu ${menuOpen ? 'active' : ''}`}>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/about">About</Link></li>
+        <li><Link to="/pro">Products</Link></li>
+        <li><Link to="/contact">Contact</Link></li>
+      </ul>
+    </div>
+  );
 }
 
 export default Header;

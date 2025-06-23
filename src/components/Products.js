@@ -1,15 +1,39 @@
-
 import React from "react";
 import "./Product.css";
-import heroImage from "../assets/ii.jpg"; // Replace with your image
-import bakeryImage from "../assets/cup.jpg"; // Replace with your image
-import cakesImage from "../assets/cc.jpg"; // Replace with your image
-import cakeImage from "../assets/choco.jpg"; // Replace with your image
-import cookiesImage from "../assets/cook.jpg"; // Replace with your image
-import cookieImage from "../assets/bb.jpg";
 import bgg from "../assets/bgg.png";
+import cakesImage from "../assets/cc.jpg";
+import cookiesImage from "../assets/cook.jpg";
+import cakeImage from "../assets/choco.jpg";
+import cookieImage from "../assets/bb.jpg";
 
 function Products() {
+  const offerings = [
+    {
+      img: cakesImage,
+      title: "Cakes",
+      price: "Starts from ₹200 (depends on kgs)",
+      desc: "Delicious and beautifully designed cakes for every occasion."
+    },
+    {
+      img: cookiesImage,
+      title: "Cookies",
+      price: "₹100",
+      desc: "Freshly baked cookies with a perfect crunch and flavor."
+    },
+    {
+      img: cakeImage,
+      title: "Chocolates",
+      price: "₹50",
+      desc: "Rich and delightful chocolates made with premium cocoa."
+    },
+    {
+      img: cookieImage,
+      title: "Beverages",
+      price: "₹75",
+      desc: "Cool and refreshing beverages to pair with your treats."
+    }
+  ];
+
   return (
     <div className="home-page">
       {/* Hero Section */}
@@ -18,55 +42,25 @@ function Products() {
         <div className="hero-text">
           <h1>Welcome to Sweet Treats Bakery</h1>
           <p>
-            Indulge in our freshly baked goods, crafted with love and the finest
-            ingredients.
+            Indulge in our freshly baked goods, crafted with love and the finest ingredients.
           </p>
         </div>
       </section>
 
-
-
       {/* Offerings Section */}
       <section className="offerings-section">
         <h2>Our Specialties</h2>
-        <br>
-        </br>
-        <br>
-        </br>
         <div className="offerings-grid">
-          <div className="offering-card">
-            <img src={cakesImage} alt="Cakes" />
-            <h3>Cakes</h3>
-            <p> Price: starts from 200rs .
-              Depends on kgs!
-            </p>
-            <p>Delicious and beautifully designed cakes for every occasion.</p>
-          </div>
-          <div className="offering-card">
-            <img src={cookiesImage} alt="Cookies" />
-            <h3>Cookies</h3>
-            <p> Price:100rs.</p>
-            <p>Freshly baked cookies with a perfect crunch and flavor.</p>
-          </div>
-        </div>
-        <div className="offerings-grid">
-          <div className="offering-card">
-            <img src={cakeImage} alt="Cakes" />
-            <h3>Chocolates</h3>
-            <p> Price:50rs</p>
-            <p>Delicious and beautifully designed cakes for every occasion.</p>
-          </div>
-          <div className="offering-card">
-            <img src={cookieImage} alt="Cookies" />
-            <h3>Beverages</h3>
-            <p> Price: 75rs.</p>
-            <p>Freshly baked cookies with a perfect crunch and flavor.</p>
-          </div>
+          {offerings.map((item, index) => (
+            <div className="offering-card" key={index}>
+              <img src={item.img} alt={item.title} />
+              <h3>{item.title}</h3>
+              <p><strong>Price:</strong> {item.price}</p>
+              <p>{item.desc}</p>
+            </div>
+          ))}
         </div>
       </section>
-
-      {/* Contact Section */}
-      
     </div>
   );
 }
