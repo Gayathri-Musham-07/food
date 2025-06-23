@@ -6,6 +6,7 @@ import co from '../assets/cool.jpg';
 import cup from '../assets/cup.jpg';
 import i from '../assets/ice.jpg';
 import s from '../assets/sn.jpg';
+import bgg from '../assets/bgg.png';
 function Presentation() {
   return (
     <section id="presentation" style={{ padding: '20px', textAlign: 'center' }}>
@@ -32,7 +33,7 @@ function Presentation() {
             <h4></h4>
           </div>
         </div>
-        <p>Cakes</p>
+        <p>Cookies</p>
       </div>
     </div>
     <div className="pop">
@@ -44,7 +45,7 @@ function Presentation() {
             <h4></h4>
           </div>
         </div>
-        <p>Cakes</p>
+        <p>Drinks</p>
       </div>
     </div>
     <div className="pop">
@@ -56,7 +57,7 @@ function Presentation() {
             <h4></h4>
           </div>
         </div>
-        <p>Cakes</p>
+        <p>Cup Cakes</p>
       </div>
     </div>
     <div className="pop">
@@ -68,7 +69,7 @@ function Presentation() {
             <h4></h4>
           </div>
         </div>
-        <p>Cakes</p>
+        <p>Ice Cream Scoops</p>
       </div>
     </div>
     <div className="pop">

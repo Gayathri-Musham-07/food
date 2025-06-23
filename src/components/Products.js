@@ -7,13 +7,14 @@ import cakesImage from "../assets/cc.jpg"; // Replace with your image
 import cakeImage from "../assets/choco.jpg"; // Replace with your image
 import cookiesImage from "../assets/cook.jpg"; // Replace with your image
 import cookieImage from "../assets/bb.jpg";
+import bgg from "../assets/bgg.png";
 
 function Products() {
   return (
     <div className="home-page">
       {/* Hero Section */}
       <section className="hero-section">
-        <img src={heroImage} alt="Bakery" className="hero-image" />
+        <img src={bgg} alt="Bakery" className="hero-image" />
         <div className="hero-text">
           <h1>Welcome to Sweet Treats Bakery</h1>
           <p>
